@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Set Name to Thread For Debug"
+---
+
+
 ## method-I
 ### set the name in the thread's executation logic
 ```c
