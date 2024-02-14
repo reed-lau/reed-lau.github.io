@@ -1,6 +1,261 @@
----
-layout: page
-description: "时间的流逝构成了生命"
----
+<html>
 
-Welcome here!
+<head>
+<title>Wei Liu's Resume</title>
+<meta charset="utf-8">
+
+<style>
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+</style>
+
+<style>
+  body {
+    padding: 30px;
+  }
+  a, a:visited {
+    color: inherit;
+  }
+  .container {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+  }
+  .left, .right {
+    /* background-color: #191b1f; */
+    flex-grow: 1;
+  }
+  .main {
+    justify-self: center;
+    /* background-color: blue; */
+    width: 900px;
+  }
+
+  .name-and-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .name {
+    width: 50%;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .link {
+    text-align: right;
+    color: #888;
+    font-size: 12;
+  }
+
+  h1 {
+    color: #008;
+    font-size: 28;
+  }
+
+  .main-items-table {
+    width: 100%;
+  }
+
+  .item-name {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    color: #008;
+    margin-bottom: 5px;
+  }
+  .item-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .education-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .education-item {
+  }
+
+  .university-name {
+    color: #008;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+
+  .right-gray-text {
+    flex-grow: 1;
+    color: #888;
+    font-size: 12;
+    text-align: right;
+  }
+  .left-bold-text {
+    font-size: 14;
+    font-style: italic;
+    font-weight: bold;
+  }
+  .list-block {
+    margin-bottom: 15px;
+  }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="left"></div>
+
+  <div class="main">
+      <div class="name-and-links">
+       <div class="name">
+        <h1> Wei Liu (Xiaoze LU) </h1>
+       </div>
+
+       <div class="links">
+        <div class="link">reed.lau@foxmail.com</div>
+        <div class="link">
+          <a href="https://github.com/reed-lau">github.com/reed-lau</a>
+        </div>
+        <div class="link">
+          <a href="https://www.zhihu.com/people/reed-84-49/posts">www.zhihu.com/people/reed-84-49/</a>
+        </div>
+       </div>
+      </div>
+
+      <hr/>
+
+      <table class="main-items-table">
+      <tbody>
+
+        <tr>
+            <td>
+              <h2 class="item-name">Educations</h2>
+            </td>
+            <td class="item-details">
+              <div class="education-container">
+                <!-- item -->
+                <div>
+                  <div style="display: flex; flex-direction: row;">
+                      <h2 class="university-name"> University of Chinese Academy of Sciences </h2>
+                      <img style="height: 16px; padding-left: 4px" src="https://old-www.ucas.ac.cn/newStyle/images/lougou.png"/>
+                      <div class="right-gray-text">Beijing, Beijing</div>
+                  </div>
+                  <div>
+                    <div style="display: flex; flex-direction: row;">
+                      <h3 class="left-bold-text">Doctor of Science(high performance computing)</h3>
+                      <div class="right-gray-text">Sep 2013 - Jun 2018</div>
+                    </div>
+                    <ul class="list-block"></ul>
+                  </div>
+                </div>
+                <!-- item -->
+                <div>
+                  <div style="display: flex; flex-direction: row;">
+                      <h2 class="university-name"> Ocean University of China </h2>
+                      <img style="height: 20px; padding-bottom: 0px" src="http://www.ouc.edu.cn/_upload/article/2c/c2/8e73298c4ec2bda457a3f06a076a/5a1329dc-b828-4b0e-afc6-8f048a1d6df6.png"/>
+                      <div class="right-gray-text">Qingdao, Shandong</div>
+                  </div>
+                  <div>
+                    <div style="display: flex; flex-direction: row;">
+                      <h3 class="left-bold-text">Bachelor of Engineering</h3>
+                      <div class="right-gray-text">Sep 2009 - Jun 2013</div>
+                    </div>
+                    <ul class="list-block"></ul>
+                  </div>
+                </div>
+                <!-- item -->
+
+              </div>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+              <h2 class="item-name"> Work </h2>
+            </td>
+            <td>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+              <h2 class="item-name">Technique Blogs</h2>
+            </td>
+            <td>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+              <h2 class="item-name">Publications</h2>
+            </td>
+            <td>
+            </td>
+        </tr>
+
+      </tbody>
+      </table>
+
+  </div>
+
+  <div class="right"></div>
+</div>
+
+</body>
+
+
+</html>
