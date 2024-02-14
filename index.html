@@ -1,186 +1,289 @@
 <html>
 
 <head>
-<title>Wei Liu's Resume</title>
-<meta charset="utf-8">
+  <title>Wei Liu's Page</title>
+  <meta charset="utf-8">
 
-<style>
-/* http://meyerweb.com/eric/tools/css/reset/
+  <style>
+    /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-</style>
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
 
-<style>
-  body {
-    padding: 30px;
-  }
-  a, a:visited {
-    color: inherit;
-  }
-  .container {
-    display: flex;
-    align-items: stretch;
-    width: 100%;
-  }
-  .left, .right {
-    /* background-color: #191b1f; */
-    flex-grow: 1;
-  }
-  .main {
-    justify-self: center;
-    /* background-color: blue; */
-    width: 900px;
-  }
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
 
-  .name-and-links {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
+    body {
+      line-height: 1;
+    }
 
-  .name {
-    width: 50%;
-  }
+    ol,
+    ul {
+      list-style: none;
+    }
 
-  .links {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-  }
+    blockquote,
+    q {
+      quotes: none;
+    }
 
-  .link {
-    text-align: right;
-    color: #888;
-    font-size: 12;
-  }
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: '';
+      content: none;
+    }
 
-  h1 {
-    color: #008;
-    font-size: 28;
-  }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+  </style>
 
-  .main-items-table {
-    width: 100%;
-  }
+  <style>
+    body {
+      padding: 30px;
+    }
 
-  .item-name {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-right: 20px;
-    color: #008;
-    margin-bottom: 5px;
-  }
-  .item-container {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+    a,
+    a:visited {
+      color: inherit;
+    }
 
-  .education-container {
-    display: flex;
-    flex-direction: column;
-  }
+    .container {
+      display: flex;
+      align-items: stretch;
+      width: 100%;
+    }
 
-  .education-item {
-  }
+    .left,
+    .right {
+      /* background-color: #191b1f; */
+      flex-grow: 1;
+    }
 
-  .university-name {
-    color: #008;
-    margin-bottom: 5px;
-    margin-right: 5px;
-  }
+    .main {
+      justify-self: center;
+      /* background-color: blue; */
+      width: 900px;
+    }
 
-  .right-gray-text {
-    flex-grow: 1;
-    color: #888;
-    font-size: 12;
-    text-align: right;
-  }
-  .left-bold-text {
-    font-size: 14;
-    font-style: italic;
-    font-weight: bold;
-  }
-  .list-block {
-    margin-bottom: 15px;
-  }
+    .name-and-links {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
 
-</style>
+    .name {
+      width: 50%;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
+
+    .link {
+      text-align: right;
+      color: #888;
+      font-size: 12;
+    }
+
+    h1 {
+      color: #008;
+      font-size: 28;
+    }
+
+    .main-items-table {
+      width: 100%;
+    }
+
+    .item-name {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-right: 20px;
+      color: #008;
+      margin-bottom: 5px;
+    }
+
+    .item-container {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .education-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .education-item {}
+
+    .university-name {
+      color: #008;
+      margin-bottom: 5px;
+      margin-right: 5px;
+    }
+
+    .right-gray-text {
+      flex-grow: 1;
+      color: #888;
+      font-size: 12;
+      text-align: right;
+    }
+
+    .left-bold-text {
+      font-size: 14;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .list-block {
+      margin-bottom: 15px;
+    }
+
+    .list-item {
+      font-size: 14;
+      list-style: disc;
+      margin-bottom: 4px;
+      margin-top: 4px;
+      text-align: justify;
+    }
+  </style>
 
 </head>
 
 <body>
 
-<div class="container">
-  <div class="left"></div>
+  <div class="container">
+    <div class="left"></div>
 
-  <div class="main">
+    <div class="main">
       <div class="name-and-links">
-       <div class="name">
-        <h1> Wei Liu (Xiaoze LU) </h1>
-       </div>
+        <div class="name">
+          <h1> Wei Liu (Xiaoze LU) </h1>
+        </div>
 
-       <div class="links">
-        <div class="link">reed.lau@foxmail.com</div>
-        <div class="link">
-          <a href="https://github.com/reed-lau">github.com/reed-lau</a>
+        <div class="links">
+          <div class="link">reed.lau@foxmail.com</div>
+          <div class="link">
+            <a href="https://github.com/reed-lau">github.com/reed-lau</a>
+          </div>
+          <div class="link">
+            <a href="https://www.zhihu.com/people/reed-84-49/posts">www.zhihu.com/people/reed-84-49/</a>
+          </div>
         </div>
-        <div class="link">
-          <a href="https://www.zhihu.com/people/reed-84-49/posts">www.zhihu.com/people/reed-84-49/</a>
-        </div>
-       </div>
       </div>
 
-      <hr/>
+      <hr />
 
       <table class="main-items-table">
-      <tbody>
+        <tbody>
 
-        <tr>
+          <!-- Education -->
+          <tr>
             <td>
               <h2 class="item-name">Education</h2>
             </td>
@@ -189,13 +292,14 @@ table {
                 <!-- item -->
                 <div>
                   <div style="display: flex; flex-direction: row;">
-                      <h2 class="university-name"> University of Chinese Academy of Sciences </h2>
-                      <img style="height: 16px; padding-left: 4px" src="https://old-www.ucas.ac.cn/newStyle/images/lougou.png"/>
-                      <div class="right-gray-text">Beijing, Beijing</div>
+                    <h2 class="university-name"> University of Chinese Academy of Sciences </h2>
+                    <img style="height: 16px; padding-left: 4px"
+                      src="https://old-www.ucas.ac.cn/newStyle/images/lougou.png" />
+                    <div class="right-gray-text">Beijing, BJ</div>
                   </div>
                   <div>
                     <div style="display: flex; flex-direction: row;">
-                      <h3 class="left-bold-text">Doctor of Science(high performance computing)</h3>
+                      <h3 class="left-bold-text">Doctor of Philosophy(high performance computing)</h3>
                       <div class="right-gray-text">Sep 2013 - Jun 2018</div>
                     </div>
                     <ul class="list-block"></ul>
@@ -204,9 +308,10 @@ table {
                 <!-- item -->
                 <div>
                   <div style="display: flex; flex-direction: row;">
-                      <h2 class="university-name"> Ocean University of China </h2>
-                      <img style="height: 20px; padding-bottom: 0px" src="http://www.ouc.edu.cn/_upload/article/2c/c2/8e73298c4ec2bda457a3f06a076a/5a1329dc-b828-4b0e-afc6-8f048a1d6df6.png"/>
-                      <div class="right-gray-text">Qingdao, Shandong</div>
+                    <h2 class="university-name"> Ocean University of China </h2>
+                    <img style="height: 20px; padding-bottom: 0px"
+                      src="http://www.ouc.edu.cn/_upload/article/2c/c2/8e73298c4ec2bda457a3f06a076a/5a1329dc-b828-4b0e-afc6-8f048a1d6df6.png" />
+                    <div class="right-gray-text">Qingdao, SD</div>
                   </div>
                   <div>
                     <div style="display: flex; flex-direction: row;">
@@ -221,39 +326,342 @@ table {
               </div>
 
             </td>
-        </tr>
+          </tr>
+          <!-- Education end -->
 
-        <tr>
+          <!-- work experience -->
+          <tr>
             <td>
-              <h2 class="item-name"> Work </h2>
+              <h2 class="item-name">Work Experience</h2>
             </td>
-            <td>
-            </td>
-        </tr>
+            <td class="item-details">
+              <div class="education-container">
 
-        <tr>
-            <td>
-              <h2 class="item-name">Technique Blogs</h2>
-            </td>
-            <td>
-            </td>
-        </tr>
+                <!-- item -->
+                <div>
+                  <div style="display: flex; flex-direction: row;">
+                    <h2 class="university-name"> NIO Autonomous Driving Technology Co., Ltd. </h2>
+                    <!-- <img style="height: 16px; padding-left: 4px"
+                                      src="https://en.wikipedia.org/wiki/TuSimple#/media/File:Company_picture.jpg" /> -->
+                    <div class="right-gray-text">Beijing, BJ</div>
+                  </div>
+                  <div>
+                    <div style="display: flex; flex-direction: row;">
+                      <h3 class="left-bold-text">AI Compiler and System Software(Expert)</h3>
+                      <div class="right-gray-text">Aug 2021 - Present</div>
+                    </div>
+                    <ul class="list-block">
 
-        <tr>
+                      <li class="list-item">Establish CUDA operator optimization methodology for Computer Vision
+                        inference tasks(eg. Transformer, Self Attention, Cross Attention, Grid Sample, RoiAlign,
+                        BEV2BEV, NMS, CropAndResize)</li>
+                      <li class="list-item">Establish CUDA operator optimization methodology for Lidar inference
+                        tasks(eg. 3D Sparse Convolution, Voxel Generator, Mapping, Freespace, RangeView)</li>
+                      <li class="list-item">Optimize Deep Learning Operator with CUDA to accelerate the training
+                        performance</li>
+                      <li class="list-item">Optimize CPU Algorithm with SIMD technology to accelerate its performance
+                      </li>
+                      <li class="list-item">Implement VLIW optimization to accelerate Image Processing tasks</li>
+                      <li class="list-item">Design and implement profiling tools for PyTorch system with cupti and nvtx
+                        to guide the layer by layer optimization</li>
+                      <li class="list-item">Design and implement high performance communication middleware</li>
+                      <li class="list-item">Design decentrialized discovery mechanism for communication middleware</li>
+
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- item -->
+                <div>
+                  <div style="display: flex; flex-direction: row;">
+                    <h2 class="university-name"> TuSimple Inc. </h2>
+                    <!-- <img style="height: 16px; padding-left: 4px"
+                      src="https://en.wikipedia.org/wiki/TuSimple#/media/File:Company_picture.jpg" /> -->
+                    <div class="right-gray-text">Beijing, BJ / San Diego, CA</div>
+                  </div>
+                  <div>
+                    <div style="display: flex; flex-direction: row;">
+                      <h3 class="left-bold-text">High Performance Computing Engineer</h3>
+                      <div class="right-gray-text">Aug 2017 - Aug 2021</div>
+                    </div>
+                    <ul class="list-block">
+                      <li class="list-item">Optimize Deep Learning operator to accelerate the Deep Learning Inference
+                        system with GPU equiped device</li>
+                      <li class="list-item">Design and implement Publisher/Subscriber communication semantic on GPU
+                        equipped system to improve the transination performance for large memory object</li>
+                      <li class="list-item">Introduce MPS(Multi-Process Service) to autonomous driving environment to
+                        improve GPU utilization with multi-processes loosely couppled architecture</li>
+                      <li class="list-item">Hook CUDA runtime API to fulfill software GPU virtualization and Deep
+                        Learning performance improvement</li>
+                      <li class="list-item">Accelerate Binary Neutral Network with SIMD(SSE/AVX) instructions on CPU
+                      </li>
+                      <li class="list-item">Design and implement high performance, high robustic, high aviability
+                        communication middleware</li>
+                      <li class="list-item">Design and implement transport layer for communication middleware with
+                        shared pointer, shared memory, socket mechanism</li>
+                      <li class="list-item">Design a publisher-centric lifecycle mangment method for shared memory and
+                        notification mechanism</li>
+                      <li class="list-item">Design and implement weak-centrialized discovery layer for communication
+                        middleware with ETCD as the discovery mechanism</li>
+                      <li class="list-item">Optimize and re-implement serialization method for message type system in
+                        communication middleware</li>
+                      <li class="list-item">Integrate performance metrics and monitor tools into one docker container,
+                        to make its' usage more easy</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- item -->
+
+              </div>
+
+            </td>
+          </tr>
+          <!-- work experience end -->
+
+
+          <!-- Tech Blogs -->
+          <tr>
+            <td>
+              <h2 class="item-name">Tech Blogs</h2>
+            </td>
+            <td class="item-details">
+              <div class="education-container">
+
+                <!-- item -->
+                <div>
+                  <div style="display: flex; flex-direction: row;">
+                    <h2 class="university-name"> Cute Series(in Chinese) </h2>
+                    <!-- <img style="height: 16px; padding-left: 4px"
+                                              src="https://en.wikipedia.org/wiki/TuSimple#/media/File:Company_picture.jpg" /> -->
+                    <div class="right-gray-text"></div>
+                  </div>
+                  <div>
+                    <div style="display: flex; flex-direction: row;">
+                      <h3 class="left-bold-text"></h3>
+                      <div class="right-gray-text"></div>
+                    </div>
+                    <ul class="list-block">
+
+                      <li class="list-item">Layout for CUTE</li>
+                      <li class="list-item">Algebra and Geometry Explantion for CUTE</li>
+                      <li class="list-item">Tensor for CUTE</li>
+                      <li class="list-item">MMA Abstract for CUTE</li>
+                      <li class="list-item">COPY Abstract for CUTE</li>
+                      <li class="list-item">Simple GEMM Implementation for CUTE</li>
+                      <li class="list-item">GEMM Pipeline for CUTE</li>
+                      <li class="list-item">Swizzle for CUTE</li>
+                      <li class="list-item">High Performance GEMM Implementation for CUTE</li>
+
+                    </ul>
+                  </div>
+                </div>
+
+
+                <!-- item -->
+                <div>
+                  <div style="display: flex; flex-direction: row;">
+                    <h2 class="university-name"> CUDA Related Topics(in Chinese) </h2>
+                    <!-- <img style="height: 16px; padding-left: 4px"
+                                              src="https://en.wikipedia.org/wiki/TuSimple#/media/File:Company_picture.jpg" /> -->
+                    <div class="right-gray-text"></div>
+                  </div>
+                  <div>
+                    <div style="display: flex; flex-direction: row;">
+                      <h3 class="left-bold-text"></h3>
+                      <div class="right-gray-text"></div>
+                    </div>
+                    <ul class="list-block">
+
+                      <li class="list-item">Registers are shared between CUDA Core and Tensor Core</li>
+                      <li class="list-item">The Advantage of ldmatrix Instruction in CUDA</li>
+                      <li class="list-item">The Difference between CUDA Core and Tensor Core in GPU</li>
+                      <li class="list-item">How to optimize Transformer Attention</li>
+
+
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- item -->
+
+              </div>
+
+            </td>
+          </tr>
+          <!-- Technique Blogs -->
+
+          <!-- Opensource Contribution -->
+          <tr>
+            <td>
+              <h2 class="item-name">Open-Source Contributions</h2>
+            </td>
+            <td class="item-details">
+              <div class="education-container">
+
+                <!-- item -->
+                <div>
+                  <div style="display: flex; flex-direction: row;">
+                    <h2 class="university-name"> cutlass </h2>
+                    <!-- <img style="height: 16px; padding-left: 4px"
+                                                                          src="https://en.wikipedia.org/wiki/TuSimple#/media/File:Company_picture.jpg" /> -->
+                    <div class="right-gray-text"></div>
+                  </div>
+                  <div>
+                    <div style="display: flex; flex-direction: row;">
+                      <h3 class="left-bold-text"></h3>
+                      <div class="right-gray-text"></div>
+                    </div>
+                    <ul class="list-block">
+
+                      <li class="list-item"><a
+                          href="https://github.com/NVIDIA/cutlass">https://github.com/NVIDIA/cutlass</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- item -->
+                <div>
+                  <div style="display: flex; flex-direction: row;">
+                    <h2 class="university-name"> Protocol Buffers </h2>
+                    <!-- <img style="height: 16px; padding-left: 4px"
+                                                    src="https://en.wikipedia.org/wiki/TuSimple#/media/File:Company_picture.jpg" /> -->
+                    <div class="right-gray-text"></div>
+                  </div>
+                  <div>
+                    <div style="display: flex; flex-direction: row;">
+                      <h3 class="left-bold-text"></h3>
+                      <div class="right-gray-text"></div>
+                    </div>
+                    <ul class="list-block">
+
+                      <li class="list-item"><a
+                          href="https://github.com/protocolbuffers/protobuf">https://github.com/protocolbuffers/protobuf</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- item -->
+                <div>
+                  <div style="display: flex; flex-direction: row;">
+                    <h2 class="university-name"> ROS2 </h2>
+                    <!-- <img style="height: 16px; padding-left: 4px"
+                                                                src="https://en.wikipedia.org/wiki/TuSimple#/media/File:Company_picture.jpg" /> -->
+                    <div class="right-gray-text"></div>
+                  </div>
+                  <div>
+                    <div style="display: flex; flex-direction: row;">
+                      <h3 class="left-bold-text"></h3>
+                      <div class="right-gray-text"></div>
+                    </div>
+                    <ul class="list-block">
+
+                      <li class="list-item"><a href="https://github.com/ros2">https://github.com/ros2</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- item -->
+                <div>
+                  <div style="display: flex; flex-direction: row;">
+                    <h2 class="university-name"> libuv </h2>
+                    <!-- <img style="height: 16px; padding-left: 4px"
+                                                    src="https://en.wikipedia.org/wiki/TuSimple#/media/File:Company_picture.jpg" /> -->
+                    <div class="right-gray-text"></div>
+                  </div>
+                  <div>
+                    <div style="display: flex; flex-direction: row;">
+                      <h3 class="left-bold-text"></h3>
+                      <div class="right-gray-text"></div>
+                    </div>
+                    <ul class="list-block">
+
+                      <li class="list-item"><a href="https://github.com/libuv/libuv">https://github.com/libuv/libuv</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- item -->
+                <div>
+                  <div style="display: flex; flex-direction: row;">
+                    <h2 class="university-name"> Jsoncpp </h2>
+                    <!-- <img style="height: 16px; padding-left: 4px"
+                                                                                  src="https://en.wikipedia.org/wiki/TuSimple#/media/File:Company_picture.jpg" /> -->
+                    <div class="right-gray-text"></div>
+                  </div>
+                  <div>
+                    <div style="display: flex; flex-direction: row;">
+                      <h3 class="left-bold-text"></h3>
+                      <div class="right-gray-text"></div>
+                    </div>
+                    <ul class="list-block">
+
+                      <li class="list-item"><a
+                          href="https://github.com/open-source-parsers/jsoncpp">https://github.com/open-source-parsers/jsoncpp</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+
+            </td>
+          </tr>
+          <!-- Opensource Contribution end -->
+
+          <!-- Publications -->
+          <tr>
             <td>
               <h2 class="item-name">Publications</h2>
             </td>
-            <td>
-            </td>
-        </tr>
+            <td class="item-details">
+              <div class="education-container">
 
-      </tbody>
+                <!-- item -->
+                <div>
+                  <div style="display: flex; flex-direction: row;">
+                    <h2 class="university-name"> Google Scholar </h2>
+                    <!-- <img style="height: 16px; padding-left: 4px"
+                                                src="https://en.wikipedia.org/wiki/TuSimple#/media/File:Company_picture.jpg" /> -->
+                    <div class="right-gray-text"></div>
+                  </div>
+                  <div>
+                    <div style="display: flex; flex-direction: row;">
+                      <h3 class="left-bold-text"></h3>
+                      <div class="right-gray-text"></div>
+                    </div>
+                    <ul class="list-block">
+
+                      <li class="list-item"><a
+                          href="https://scholar.google.com/citations?user=By4g5MUAAAAJ&hl=en">https://scholar.google.com/citations?user=By4g5MUAAAAJ&hl=en</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+
+            </td>
+          </tr>
+          <!-- Publications end -->
+
+        </tbody>
       </table>
 
-  </div>
+    </div>
 
-  <div class="right"></div>
-</div>
+    <div class="right"></div>
+  </div>
 
 </body>
 
