@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://reed-lau.github.io/sitemap.xml 
